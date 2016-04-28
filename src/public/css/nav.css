@@ -1,0 +1,119 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+#main-logo {
+    height: 57px;
+}
+
+.header {
+    background-color: #1b49a0;
+    height: 60px;
+    position: fixed;
+    top: 0; 
+    left:0;
+    width: 100%;
+    z-index: 1;
+}
+
+#search {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.profile-small {
+    width: 40px;
+    border: 2px solid white;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+/*Search bar and dropdown*/
+a:hover {
+ cursor:pointer;
+}
+
+.searchDropdown {
+    position: relative;
+}
+
+.searchDropdown li {
+    list-style: none;
+}
+
+.searchDropdown li a:hover {
+    text-decoration: none;
+}
+
+.searchDropdown li img {
+    margin-left: 5px;
+    margin-right: 10px;
+    float: left;
+    width: 64px;
+    height: 96px;
+}
+
+.searchDropdown .list-group-item:hover {
+    background-color: #d8d7eb;
+}
+
+.searchDropdown h5, h6 {
+    color: #383838;
+}
+
+.searchDropdown h5 {
+    font-size: 1.3em;
+    padding-top: 5px;
+}
+
+.searchDropdown h6 {
+    font-size: 1em
+}
+
+/*Search - more results page*/
+.search-more {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 2px;
+}
+
+.search-more:hover {
+    background-color: #d8d7eb;
+}
+
+.search-more img {
+    margin-right: 15px;
+}
+
+.search-more a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-more h4, p {
+    color: #383838;
+}
+
+.search-more h4 {
+    font-size: 1.4em;
+}
+
+.search-more p {
+    font-size: 1.1em;
+}
+
+
+/*Directory*/
+.directory {
+    background-color: white;
+    padding-top: 18px;
+}
+
+.main {
+    padding-top: 40px;
+}

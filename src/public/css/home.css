@@ -1,0 +1,9 @@
+
+.jumbotron {
+    background: url('../assets/home.jpg');
+    height: 800px;
+}
+
+.jumbotron h1 {
+    color: #FFFFFF;
+}

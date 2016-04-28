@@ -1,0 +1,49 @@
+{
+  "name": "@iamadamjowett/angular-click-outside",
+  "version": "2.6.0",
+  "author": {
+    "name": "Adam Jowett",
+    "email": "akuma.me@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IamAdamJowett/angular-click-outside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IamAdamJowett/angular-click-outside/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.3.2"
+  },
+  "gitHead": "b47ddce905bb0ea30101e17a24852ce98907df11",
+  "description": "An angular directive to detect a click outside of an elements scope. Great for closing dialogues, drawers and off screen menu's etc.",
+  "homepage": "https://github.com/IamAdamJowett/angular-click-outside#readme",
+  "_id": "@iamadamjowett/angular-click-outside@2.6.0",
+  "scripts": {},
+  "_shasum": "dd2fb087215901abd24b2242d98bc728451e901b",
+  "_from": "@iamadamjowett/angular-click-outside@*",
+  "_npmVersion": "2.14.4",
+  "_nodeVersion": "4.1.1",
+  "_npmUser": {
+    "name": "iamadamjowett",
+    "email": "akuma.me@gmail.com"
+  },
+  "dist": {
+    "shasum": "dd2fb087215901abd24b2242d98bc728451e901b",
+    "tarball": "http://registry.npmjs.org/@iamadamjowett/angular-click-outside/-/angular-click-outside-2.6.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "iamadamjowett",
+      "email": "akuma.me@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/angular-click-outside-2.6.0.tgz_1456408305050_0.08284244732931256"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/@iamadamjowett/angular-click-outside/-/angular-click-outside-2.6.0.tgz"
+}

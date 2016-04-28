@@ -1,0 +1,200 @@
+#search {
+    width: 100%;
+    margin-top: 13px;
+}
+
+span.glyphicon-cog {
+    color: white!important;
+    padding-top: 20px;
+    font-size: 1.4em;
+}
+
+.profile-small {
+    width: 40px;
+    border: 2px solid white;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+/*show details*/
+
+.show-details {
+    background-color: white;
+    padding-top: 15px;
+    padding-right: 30px;
+    height: 350px; 
+}
+
+.show-details img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.show-details h3 {
+    margin-top: 0;
+}
+
+.show-details h4 {
+    font-size: 1em;
+    color: #1b49a0;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.btn-default {
+    background-color: #1b49a0;
+    color: white;
+    padding: 7px 10px;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #0d338a;
+    color: white;
+}
+
+.btn-default:disabled {
+    background-color: grey;
+}
+
+.btn-default:disabled:hover {
+    background-color: #818181;
+}
+
+.show-details .btn-default {
+    width: 110px;
+}
+
+.show-details a {
+    color: #1b49a0;
+    text-decoration: underline;
+}
+
+.show-row {
+    margin-bottom: 10px;
+}
+
+.show-row .btn {
+    width: 100%;
+}
+
+.show-row h5 {
+    margin-top: -10px;
+    font-size: 1em;
+}
+
+
+
+/*.add-review*/
+
+textarea {
+    margin-top: 10px;
+}
+
+.noresize {
+  resize: none; 
+}
+
+/*Media Queries*/
+@media screen and (max-width: 767px) {
+    
+    
+    .show-row img {
+        display: block;
+        margin: auto;
+        padding-top: 7px;
+        padding-bottom: 18px;
+    }
+    
+    .main {
+        padding: 20px 20px 0 20px;
+    }
+    
+    .bottom-row {
+        margin: auto;
+    }
+    
+    .related-shows {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    .show-details {
+        height: 825px; 
+    }
+    
+    .show-details .btn {
+        margin-top: 10px;
+    }
+    
+}
+
+.rating {
+  font-family: 'FontAwesome';
+  margin: 10px auto;
+}
+
+.rating > fieldset {
+  border: none;
+  display: inline-block;
+}
+
+.rating > fieldset:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rating > fieldset:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 .05em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 200%;
+  color: #FFD700;
+}
+
+.rating > fieldset:not(:checked) > .dynamic ~ label:before {
+  content: '\f006  ';
+}
+
+.rating > fieldset:not(:checked) > .dynamic ~ label:hover,
+.rating > fieldset:not(:checked) > .dynamic ~ label:hover ~ label {
+  color: #FFD700;
+  text-shadow: 0 0 3px #FFD700;
+}
+
+.rating > fieldset:not(:checked) > .dynamic ~ label:hover:before,
+.rating > fieldset:not(:checked) > .dynamic ~ label:hover ~ label:before {
+  content: '\f005';
+}
+
+.rating > fieldset > .dynamic:checked ~ label:before {
+  content: '\f005';
+}
+
+.rating > fieldset > .dynamic ~ label:active {
+  position: relative;
+  top: 2px;
+}
+
+/*disabled ratings*/
+
+.rating > fieldset:disabled > .full ~ label:before{
+  content: '\f005';
+}
+
+.rating > fieldset:disabled > label:hover,
+.rating > fieldset:disabled > label:hover ~ label {
+  text-shadow: 0 0 0px #FFD700 ;
+  cursor: default;
+}
+
+.rating > fieldset:disabled > label:active {
+  top: 0px;
+}
+
+.rating > fieldset:disabled > label:before {
+  content: '\f006';
+}

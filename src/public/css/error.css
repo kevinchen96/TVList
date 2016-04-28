@@ -1,0 +1,17 @@
+.homeButton {
+	background-color:#1b49a0;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 17px;
+	text-decoration:none;
+	margin: 0 auto;
+}
+
+.homeButton:active {
+	position:relative;
+	top:1px;
+}

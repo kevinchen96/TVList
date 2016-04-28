@@ -1,0 +1,95 @@
+<!--     <div class="container main">
+        <div class="row show-row">
+            <div class="col-xs-12 show-details">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img ng-src="{{current.image.medium}}" alt="{{current.name}}">
+                    </div>
+                    <div class="col-sm-9 show-description">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="rating">
+                                <h3>{{current.name}}</h3>
+                                <h5>Network:  <span>{{current.network.name}}</span></h5>
+                                <p>{{current.summary}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Genre</h4>
+                                <p><span ng-repeat="genre in current.genres">{{ $index == current.genres.length-1 ? (genre) : (genre + ', ')}}</span></p>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Premier Date</h4>
+                                <p>{{ current.premiered }}</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Status</h4>
+                                <p>{{ current.status }}</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Type</h4>
+                                <p>{{ current.type }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <button class="btn btn-default" ng-click="addToFavorites()" ng-if="!inFavorites">Add To Favorites</button>
+                                <button class="btn btn-default" ng-click="removeFromFavorites()" ng-if="inFavorites">Remove from Favorites</button>
+                            </div>
+                        </div>
+                    </div><!-- /.show-description -->
+<!--                 </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container main">
+        <div class="row show-row">
+            <div class="col-xs-12 show-details">
+                <div class="row">
+                    <div class="col-sm-9 show-description">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>{{current.name}}</h3>
+                                <h5>Network:  <span>{{current.network.name}}</span></h5>
+                                <p>{{current.summary}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                           <div class="col-sm-3 col-xs-6">
+                                <h4>Genre</h4>
+                                <p><span ng-repeat="genre in current.genres">{{ $index == current.genres.length-1 ? (genre) : (genre + ', ')}}</span></p>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Premier Date</h4>
+                                <p>{{ current.premiered }}</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Status</h4>
+                                <p>{{ current.status }}</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <h4>Type</h4>
+                                <p>{{ current.type }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <button class="btn btn-default" ng-click="addToFavorites()" ng-if="!inFavorites">Add To Favorites</button>
+                                <button class="btn btn-default" ng-click="removeFromFavorites()" ng-if="inFavorites">Remove from Favorites</button>
+                            </div>
+                        </div>
+                    </div><!-- /.event-description -->
+                    <div class="col-sm-3">
+                        <img ng-src="{{current.image.medium}}" alt="{{current.name}}">
+                    </div>
+                </div>
+            </div><!-- /.event-details -->
+            
+        </div><!-- /.event-row -->
+    </div><!-- /.container, .main -->
+

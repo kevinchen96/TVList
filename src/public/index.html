@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TVList</title>
+     <!--Vendor-->
+     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.angularjs.org/1.5.0-beta.2/angular-route.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/profile.css" type="text/css">
+    <link rel="stylesheet" href="css/error.css" type="text/css">
+
+    <link rel="stylesheet" href="css/show_details.css" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" type=text/css>
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type=text/css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/angular-click-outside/clickoutside.directive.js"></script>
+    <script src="app.js"></script>
+    <script src="modules/favorite/favoriteController.js"></script>
+    <script src="modules/show_details/showDetailsController.js"></script>
+    <script src="modules/search/searchController.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="mainController">
+    <div id="status"></div>
+    <div class="header" style="background-color: #1b49a0;">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="col-xs-3 col-md-2">
+                    <a href="#/" class="navbar-brand">TV List</a>
+                </div>
+                <div class="col-xs-5 col-md-7">
+                    <input type="text" class="form-control" placeholder="Search by title" id="search" ng-model="$scope.query" ng-click="openThis()">
+                    <div class="searchDropdown" id="random" click-outside="closeThis()" outside-if-not="search" >
+                        <ul class="list-group" ng-show="close == 'false'">
+                           <li ng-repeat="result in results" class="list-group-item">
+                                <a href="#/details/{{result.show.id}}" style="height: 120px; width: 500px;" ng-click="closeThis()">
+                                    <img src="{{ result.show.image.medium }}"/>
+                                    <h5>{{ result.show.name }}</h5>
+                                    <h6>
+                                        <span >{{ result.show.type }}</span>
+                                    </h6>
+                                    <span class="clearfix"></span>
+                                </a>
+                           </li>
+                           <li ng-if="results.length > 0" class="list-group-item">
+                                <a href="#/search/{{$scope.query}}" style="height: 100px; width: 500px;" ng-click="closeThis()">
+                                    <h6>More...</h6>
+                                    <span class="clearfix"></span>
+                                </a>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-2">
+                    <a href="#/profile" class="navbar-brand">TV Favorites</a>
+                </div>
+            </div><!--./container-fluid-->
+        </div><!--./navbar-->
+    </div><!--./header-->
+
+    <div class="clearfix"></div>
+    <div ng-view autoscroll="true">
+        <!-- content goes here -->
+    </div>
+</body>
+</html>
