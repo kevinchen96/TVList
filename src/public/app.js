@@ -29,16 +29,15 @@ app.config(function($routeProvider){
 
 
 angular.module('app').controller('mainController', ['$scope', '$http', '$location', '$window', function( $scope, $http, $location, $window){
-    
+    $scope.query = "";
     $scope.results = [];
     $scope.close = 'false';
-    $scope.$watch('$scope.query', function(value){
+    $scope.$watch('query', function(value){
         if(value){
             $scope.close = 'false';
             var filtered = value.replace(/ /g, '+');
             $http.get('http://api.tvmaze.com/search/shows?q='+filtered)
                 .then(function(data){
-                    console.log(data);
                     $scope.results = data.data.slice(0, 3);
                 },
                 function(){
@@ -59,6 +58,11 @@ angular.module('app').controller('mainController', ['$scope', '$http', '$locatio
 
     $scope.onPage = function(page) {
         return $location.path() == "/" + page;
+    }
+
+    $scope.submit = function(){
+        console.log($scope.query);
+        window.location.href = "#/search/" + $scope.query;
     }
 
 }]);

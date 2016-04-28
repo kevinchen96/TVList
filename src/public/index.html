@@ -42,7 +42,10 @@
                     <a href="#/" class="navbar-brand">TV List</a>
                 </div>
                 <div class="col-xs-5 col-md-7">
-                    <input type="text" class="form-control" placeholder="Search by title" id="search" ng-model="$scope.query" ng-click="openThis()">
+                <form ng-submit="submit()">
+                    <input type="text" class="form-control" placeholder="Search by title" id="search" ng-model="query" ng-click="openThis()" autocomplete="off">
+                    <input type="submit" value="Submit" hidden="hidden">
+                </form>
                     <div class="searchDropdown" id="random" click-outside="closeThis()" outside-if-not="search" >
                         <ul class="list-group" ng-show="close == 'false'">
                            <li ng-repeat="result in results" class="list-group-item">
@@ -56,7 +59,7 @@
                                 </a>
                            </li>
                            <li ng-if="results.length > 0" class="list-group-item">
-                                <a href="#/search/{{$scope.query}}" style="height: 100px; width: 500px;" ng-click="closeThis()">
+                                <a href="#/search/{{query}}" style="height: 100px; width: 500px;" ng-click="closeThis()">
                                     <h6>More...</h6>
                                     <span class="clearfix"></span>
                                 </a>

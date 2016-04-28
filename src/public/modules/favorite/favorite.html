@@ -5,11 +5,11 @@
             <div ng-repeat="show in favorites" class="col-sm-4 books">
                 <div class="container-book">
                     <a href="#/details/{{show.id}}">
-
                         <img src="{{show.image.medium}}" alt="{{show.name}}" class="book scale">
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <h4 ng-if="favorites.length == 0">No Favorites added!</h3>
 </div><!-- /.container-fluid, .main-->
