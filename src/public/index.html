@@ -5,6 +5,8 @@
     <title>TVList</title>
      <!--Vendor-->
      <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="js/thumbnail-scroller-master/js/minified/jquery.mThumbnailScroller.min.js"></script>
+    <link rel="stylesheet" href="js/thumbnail-scroller-master/jquery.mThumbnailScroller.css">
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>    
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
@@ -24,13 +26,17 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" type=text/css>
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type=text/css>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/angular-click-outside/clickoutside.directive.js"></script>
     <script src="app.js"></script>
     <script src="modules/favorite/favoriteController.js"></script>
     <script src="modules/show_details/showDetailsController.js"></script>
     <script src="modules/search/searchController.js"></script>
+    <script src="modules/home/homeController.js"></script>
+<!--     <script>
+    $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script> -->
 </head>
 
 <body ng-app="app" ng-controller="mainController">

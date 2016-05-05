@@ -5,7 +5,8 @@ var app = angular.module('app', ['ngRoute', 'angular-click-outside']);
 app.config(function($routeProvider){
     $routeProvider
         .when('/', {
-                templateUrl: 'modules/home/home.html'
+                templateUrl: 'modules/home/home.html',
+                controller: 'homeController'
         })
         .when('/profile', {
                 templateUrl: 'modules/favorite/favorite.html',

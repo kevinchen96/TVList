@@ -1,9 +1,46 @@
 
 .jumbotron {
     background: url('../assets/home.jpg');
-    height: 800px;
+        height: 600px;
+    margin-top: -50px;
 }
 
 .jumbotron h1 {
     color: #FFFFFF;
+}
+
+#my-thumbs-list{
+	overflow: auto;
+	width: 1115px;
+	height: auto;
+    top: 50px;
+	left: 40px;
+}
+
+.contentScroll{
+    width: 1115px;
+    height: auto;
+    left: 40px;
+	overflow: auto;
+	position: relative;
+	padding: 10px;
+	background-color: #333;
+	margin: 20px;
+	float: left;
+}
+.contentScroll li{
+	margin: 4px;
+	overflow: hidden;
+}
+.contentScroll li a{
+	display: inline-block;
+}
+.contentScroll.light, .contentScroll.light .mTSButton{ 
+	background-color: #c2beb2; 
+}
+.contentScroll.light li a{ 
+	border: 7px solid rgba(255,255,255,.4); 
+}
+#my-thumbs-list .mTSButton{ 
+	background-color: #333; 
 }
