@@ -1,5 +1,3 @@
-# TVlist
-
 1. Project Intro
 
 My project is a tv list app that lets you search for tv shows and save them locally to your browser. Searching for shows lets you any shows and look at their details. To test the site, simply go to the url: http://chen884.student.uscitp.com/itp301/final_project/public/#/
@@ -21,4 +19,3 @@ I used the jquery thumbnail scroller plugin. The plugin was beneficial because i
 
 6. At least three extras
 I used the JSON API, js objects and web storage. The JSON API allows my site to be fully dynamic and functional as a search site. Calls are made to the api to retrieve information. This negtes the need for a backend also because the data is coming from another source. JS Objects allow me to use ng directives such as ng repeat to simplify my template code and make it more efficient and easy to manage. Web storage is implemented locally so that people can save favorite lists as long as they don't clear their storage. 
-
